@@ -12,10 +12,16 @@ Tasks:
 5. Complete equals method in animal
 
 Estimated Time (minutes):
-1. XXX
-2. XXx
+1. 60
+2. 60
+3. 60
+4. 30
+5. 30
 
 Actual Time (minutes):
-1. XXX
-2. XXX
+1. 60
+2. 60
+3. 60
+4. 20
+5. 20
 */}
