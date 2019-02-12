@@ -27,15 +27,13 @@ public class AnimalTest
     // TODO: test full constructor, getters, and toString
     public void constructorAnimalTest() throws AssertException
     {
-       // .getColor .getName .getHeight .getWeight
-    	//String color, String name, double weight, double height
-    	
+    	//Create an animal object
     	String color1 = "blue";
     	String name1 = "name";
     	double weight1 = 0.0;
     	double height1 = 0.0;
     	Animal animal1 = new Animal(color1, name1, weight1, height1);
-    	
+    	//Create and animal object
     	String color2 = "blue";
     	String name2 = "name";
     	double weight2 = 0.0;
@@ -48,31 +46,51 @@ public class AnimalTest
     }
     public void gettersAnimalTest()
     {
+    	//Create an animal object
     	String color1 = "green";
     	String name1 = "Pony";
     	double weight1 = 1.0;
     	double height1 = 1.0;
     	Animal animal1 = new Animal(color1, name1, weight1, height1);
     	
-    	//getColor
+    	//Test getColor()
     	Assert.assertEquals("green", animal1.getColor());
-    	//getName
+    	//Test getName()
     	Assert.assertEquals("Pony", animal1.getName());
-    	//getWeight
+    	//Test getWeight()
     	Assert.assertEquals(1.0, animal1.getWeight(), 0.05);
-    	//getHeight
+    	//Test getHeight()
     	Assert.assertEquals(1.0, animal1.getHeight(), 0.05);
     	
     }
     public void toStringAnimalTest()
     {
+    	//Create and animal object
     	String color1 = "blue";
     	String name1 = "name";
     	double weight1 = 0.0;
     	double height1 = 0.0;
     	Animal animal1 = new Animal(color1, name1, weight1, height1);
-    	
+    	//Test toString()
     	Assert.assertEquals("name, a blue-colored animal. 0.0 pounds, 0.0 inches\n", animal1.toString());
+    }
+    public void equalsAnimalTest()
+    {
+    	//Create an animal object
+    	String color1 = "blue";
+    	String name1 = "name";
+    	double weight1 = 0.0;
+    	double height1 = 0.0;
+    	Animal animal1 = new Animal(color1, name1, weight1, height1);
+    	//Create an animal object
+    	String color2 = "blue";
+    	String name2 = "name";
+    	double weight2 = 0.0;
+    	double height2 = 0.0;
+    	Animal animal2 = new Animal(color2, name2, weight2, height2);
+    	
+    	//Test equals()
+    	Assert.assertEquals(true, animal1.equals(animal2));
     }
 }
 
