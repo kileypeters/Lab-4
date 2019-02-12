@@ -1,5 +1,3 @@
-import org.junit.Assert;
-
 public class ZooTest
 {
 
@@ -13,7 +11,7 @@ public class ZooTest
    	Assert.assertEquals(zoo2, zoo2);
     	
     }
-	public void gettersZooTest()
+	public void gettersZooTest() throws AssertException
     {
 		//Create a zoo and fill with animals
     	Zoo zoo1 = new Zoo(2);
@@ -32,7 +30,7 @@ public class ZooTest
     	//Test getCapacity()
     	Assert.assertEquals(2, zoo1.getCapacity());
     }
-    public void toStringZooTest()
+    public void toStringZooTest() throws AssertException
     {
     	//Create a zoo with animals
         Zoo zoo1 = new Zoo(2);
