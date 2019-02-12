@@ -1,5 +1,3 @@
-import org.junit.Assert;
-
 public class EquipmentTest
 {
 
@@ -17,7 +15,7 @@ public class EquipmentTest
     	Assert.assertEquals(equip2, equip2);
     	
     }
-    public void gettersEquipmentTest()
+    public void gettersEquipmentTest() throws AssertException
     {
     	//Create an equipment object
     	String strg1 = "name1/1,0.0,0.0,desc1";
@@ -35,7 +33,7 @@ public class EquipmentTest
     	Assert.assertEquals("desc1", equip1.getDescription());
     	
     }
-    public void toStringEquipmentTest()
+    public void toStringEquipmentTest() throws AssertException
     {
     	//Create equipment object
     	String strg1 = "name1/1,0.0,0.0,desc1";
@@ -43,7 +41,7 @@ public class EquipmentTest
     	//test toString()
     	Assert.assertEquals("Name: name1, Number: 1, Weight: 0.00 lbs, Price: $0.00 - desc1", equip1.toString());
     }
-    public void equalsEquipmentTest()
+    public void equalsEquipmentTest() throws AssertException
     {
     	//Create equipment object
     	String strg1 = "name1/1,0.0,0.0,desc1";
