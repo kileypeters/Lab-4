@@ -4,7 +4,7 @@ public class EquipmentTest
 {
 
     // TODO: test full constructor, getters, and toString
-    public void constructorTest() throws AssertException
+    public void constructorEquipmentTest() throws AssertException
     {
        // .getColor .getName .getHeight .getWeight
     	//name count totalweight totalprice descriptoin
@@ -19,11 +19,23 @@ public class EquipmentTest
     	Assert.assertEquals(equip2, equip2);
     	
     }
-    public void gettersTest()
+    public void gettersEquipmentTest()
     {
+    	String strg1 = "name1/1,0.0,0.0,desc1";
+    	Equipment equip1 = new Equipment(strg1);
+    	//getName
+    	Assert.assertEquals("name1", equip1.getName());
+    	//getCount
+    	Assert.assertEquals(1, equip1.getCount());
+    	//getTotalWeight
+    	Assert.assertEquals(0.0, equip1.getTotalWeight(), 0.05);
+    	//getTotalPrice
+    	Assert.assertEquals(0.0, equip1.getTotalPrice(), 0.05);
+    	//getDescription
+    	Assert.assertEquals("desc1", equip1.getDescription());
     	
     }
-    public void toStringTest()
+    public void toStringEquipmentTest()
     {
     	String strg1 = "name1/1,0.0,0.0,desc1";
     	Equipment equip1 = new Equipment(strg1);
