@@ -1,4 +1,3 @@
-import org.junit.Assert;
 
 /**
  * Testing class for Product object
@@ -44,7 +43,7 @@ public class AnimalTest
     	Assert.assertEquals(animal2, animal2);
     	
     }
-    public void gettersAnimalTest()
+    public void gettersAnimalTest() throws AssertException
     {
     	//Create an animal object
     	String color1 = "green";
@@ -63,7 +62,7 @@ public class AnimalTest
     	Assert.assertEquals(1.0, animal1.getHeight(), 0.05);
     	
     }
-    public void toStringAnimalTest()
+    public void toStringAnimalTest() throws AssertException
     {
     	//Create and animal object
     	String color1 = "blue";
@@ -74,7 +73,7 @@ public class AnimalTest
     	//Test toString()
     	Assert.assertEquals("name, a blue-colored animal. 0.0 pounds, 0.0 inches\n", animal1.toString());
     }
-    public void equalsAnimalTest()
+    public void equalsAnimalTest() throws AssertException
     {
     	//Create an animal object
     	String color1 = "blue";
